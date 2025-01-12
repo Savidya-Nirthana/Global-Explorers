@@ -37,7 +37,7 @@ const NavBar = () => {
               dropNav
                 ? "max-h-[500px] opacity-100"
                 : "max-h-0 opacity-0 pointer-events-none"
-            } sm:opacity-100 sm:pointer-events-auto sm:max-h-full flex flex-col sm:flex-row duration-500 overflow-hidden`}
+            } sm:opacity-100 sm:pointer-events-auto sm:max-h-full flex flex-col sm:flex-row duration-500 md:text-[18px] text-[16px] overflow-hidden`}
           onClick={() => setDropNav(!dropNav)}
         >
           <Link
