@@ -15,16 +15,16 @@ const NavBar = () => {
       <div className=" bg-blue-500 w-[100%] h-[60px] text-slate-100 flex justify-center items-center">
         24 x 7 Service - Get Personalized Quote Now{" "}
       </div>
-      <div className=" flex md:flex-row flex-col md:justify-around justify-start items-center">
-        <div className=" flex justify-between flex-row gap-10 items-center">
+      <div className="flex flex-col items-center justify-start md:flex-row md:justify-around">
+        <div className="flex flex-row items-center justify-between gap-10 ">
           <div className=" flex flex-row gap-[20px] w-full justify-between items-center">
             <img src={logo} alt="logo" className="md:w-[80px] w-[60px]" />
             <div className=" text-blue-500 font-bold text-[18px]">
-              GLOBAL <span className=" text-green-500">EXPLORERS</span>
+              GLOBAL <span className="text-green-500 ">EXPLORERS</span>
             </div>
           </div>
           <div
-            className=" sm:hidden block cursor-pointer"
+            className="block cursor-pointer sm:hidden"
             onClick={() => setDropNav(!dropNav)}
           >
             <FontAwesomeIcon icon={dropNav ? faXmark : faBars} size="xl" />
@@ -54,7 +54,7 @@ const NavBar = () => {
               isActive("/about") ? "text-blue-500" : ""
             } px-[20px] py-[10px]  lg:mx-5 hover:text-blue-500 duration-500
             `}
-            to={`about`}
+            to={`../about`}
           >
             About
           </Link>
@@ -63,7 +63,7 @@ const NavBar = () => {
               isActive("/tour") ? "text-blue-500" : ""
             } px-[20px] py-[10px]  lg:mx-5 hover:text-blue-500 duration-500 
             `}
-            to={`tour`}
+            to={`../tour`}
           >
             Tour
           </Link>
@@ -72,7 +72,7 @@ const NavBar = () => {
               isActive("/contact") ? "text-blue-500" : ""
             } px-[20px] py-[10px]  lg:mx-5 hover:text-blue-500 duration-500
             `}
-            to={`contact`}
+            to={`../contact`}
           >
             Contact Us
           </Link>
